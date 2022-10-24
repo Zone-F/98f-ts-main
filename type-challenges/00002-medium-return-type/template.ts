@@ -1,3 +1,5 @@
-type MyReturnType<T> = any
+type MyReturnType<T> = {
+    
+}
 
 export default MyReturnType;

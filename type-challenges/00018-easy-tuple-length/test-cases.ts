@@ -1,9 +1,8 @@
-import type Length from  './template';
 import type { Equal, Expect } from '@type-challenges/utils'
+import Length from './template'
 
 const tesla = ['tesla', 'model 3', 'model X', 'model Y'] as const
 const spaceX = ['FALCON 9', 'FALCON HEAVY', 'DRAGON', 'STARSHIP', 'HUMAN SPACEFLIGHT'] as const
-
 
 type cases = [
   Expect<Equal<Length<typeof tesla>, 4>>,

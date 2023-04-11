@@ -3,7 +3,7 @@
 
 
 
-type I = GetRequired<{ foo: number, bar?: string }> // expected to be { foo: number }
+type I1 = GetRequired<{ foo: number, bar?: string }> // expected to be { foo: number }
 
 type GetRequired<T> = {
     [K in keyof T as Omit<T,K> extends T ? never : K ] : T[K]

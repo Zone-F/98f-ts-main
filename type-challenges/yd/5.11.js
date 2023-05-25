@@ -65,7 +65,6 @@ function inorderTraverse(root) {
 console.log('中序遍历', inorderTraverse(data));
 
 // 后序遍历
-// 
 function postorderTraversal(root) {
   let stack = [root];
   let result = [];
